@@ -1,0 +1,47 @@
+{
+  "models": {
+    "text_generation": {
+      "name": "gpt2",
+      "model_id": "openai-community/gpt2",
+      "task": "text-generation",
+      "description": "GPT-2 for text generation"
+    },
+    "text_classification": {
+      "name": "distilbert",
+      "model_id": "distilbert-base-uncased-finetuned-sst-2-english",
+      "task": "text-classification",
+      "description": "DistilBERT for sentiment analysis and text classification"
+    },
+    "named_entity_recognition": {
+      "name": "bert_ner",
+      "model_id": "dslim/bert-base-uncased-finetuned-ner",
+      "task": "token-classification",
+      "description": "BERT finetuned for Named Entity Recognition"
+    },
+    "question_answering": {
+      "name": "distilbert_qa",
+      "model_id": "distilbert-base-cased-distilled-squad",
+      "task": "question-answering",
+      "description": "DistilBERT for Question Answering"
+    },
+    "text_summarization": {
+      "name": "t5",
+      "model_id": "google-t5/t5-small",
+      "task": "summarization",
+      "description": "T5 model for text summarization"
+    },
+    "zero_shot_classification": {
+      "name": "zero_shot",
+      "model_id": "facebook/bart-large-mnli",
+      "task": "zero-shot-classification",
+      "description": "BART for zero-shot classification"
+    }
+  },
+  "settings": {
+    "cache_dir": "./model_cache",
+    "device": "cpu",
+    "max_length": 512,
+    "batch_size": 32,
+    "enable_gpu": false
+  }
+}
